@@ -1,0 +1,93 @@
+* {
+  font-family: "Montserrat", sans-serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: <weight> !important;
+  font-style: normal !important;
+}
+
+.bg-gradient-yellow {
+  background-image: linear-gradient(
+    to left top,
+    #ffff7b,
+    #ffff8d,
+    #ffff9f,
+    #ffffb0,
+    #ffffc0,
+    #fffccb,
+    #fffad6,
+    #fff8e1,
+    #fff6eb,
+    #fff8f8,
+    #fffcff,
+    #ffffff
+  ) !important;
+}
+
+.bg-white {
+  background-color: #ffff01;
+}
+
+.bg-navy {
+  background-color: #020066 !important;
+}
+
+.bg-light-navy {
+  background-color: #14118c !important;
+}
+
+.bg-yellow {
+  background-color: #ffff01;
+}
+
+.bg-orange {
+  background-color: #ffbe19;
+}
+
+.bg-dark-orange {
+  background-color: #ffab0d;
+}
+
+.text-navy {
+  color: #020066;
+}
+
+.text-orange {
+  color: #ffbe19;
+}
+
+.btn-navy {
+  color: white !important;
+  background-color: #020066 !important;
+}
+
+.btn-navy:hover {
+  color: white !important;
+  background-color: #14118c !important;
+}
+
+.btn-outline-navy {
+  color: #020066 !important;
+  border-color: #020066 !important;
+  border-width: 2px !important;
+}
+
+.btn-outline-navy:hover {
+  color: white !important;
+  background-color: #020066 !important;
+}
+
+.btn-orange {
+  background-color: #ffbe19 !important;
+}
+
+.shadow-navy {
+  box-shadow: 7px 7px #020066 !important;
+}
+
+.shadow-yellow {
+  box-shadow: 7px 7px #ffff01 !important;
+}
+
+.shadow-orange {
+  box-shadow: 7px 7px #ffbe19 !important;
+}
