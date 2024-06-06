@@ -3,9 +3,9 @@ import NavbarBrand from "../../ui/NavbarBrand";
 import HamburgerButton from "../../ui/button/HamburgerButton";
 import NavbarList from "./NavbarList";
 
-const NavbarContainer = () => {
+const NavbarContainer = ({ addOn }) => {
   return (
-    <NavbarLayout bg={"white"} addOn={"shadow-sm"}>
+    <NavbarLayout bg={"white"} addOn={`shadow-sm ${addOn}`}>
       <NavbarBrand />
       <HamburgerButton />
       <NavbarList />

@@ -6,10 +6,10 @@ const TopbarContainer = () => {
   return (
     <NavbarLayout bg={"orange"}>
       <div className="d-flex justify-content-end gap-2">
-        <Sosmed icon={<FaInstagram />} />
-        <Sosmed icon={<FaYoutube />} />
-        <Sosmed icon={<FaFacebook />} />
-        <Sosmed icon={<FaWhatsapp />} />
+        <Sosmed color={"navy"} icon={<FaInstagram />} />
+        <Sosmed color={"navy"} icon={<FaYoutube />} />
+        <Sosmed color={"navy"} icon={<FaFacebook />} />
+        <Sosmed color={"navy"} icon={<FaWhatsapp />} />
       </div>
     </NavbarLayout>
   );

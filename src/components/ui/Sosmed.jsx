@@ -1,6 +1,6 @@
-const Sosmed = ({ icon }) => {
+const Sosmed = ({ icon, color }) => {
   return (
-    <a href="#" className="text-navy">
+    <a href="#" className={`text-${color}`}>
       {icon}
     </a>
   );

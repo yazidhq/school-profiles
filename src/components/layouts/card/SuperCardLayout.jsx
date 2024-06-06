@@ -8,16 +8,23 @@ const SuperCardLayout = () => {
     <div className="container" style={{ marginTop: "-5%" }}>
       <div className="card-group">
         <SuperCardContainer
+          route={""}
           icon={<SiElectronbuilder />}
           title={"Fasilitas Kami"}
           bg={"navy"}
         />
         <SuperCardContainer
+          route={""}
           icon={<GiExtraTime />}
           title={"Ekstrakurikuler"}
           bg={"light-navy"}
         />
-        <SuperCardContainer icon={<FaMedal />} title={"Prestasi"} bg={"navy"} />
+        <SuperCardContainer
+          route={""}
+          icon={<FaMedal />}
+          title={"Prestasi"}
+          bg={"navy"}
+        />
       </div>
     </div>
   );
