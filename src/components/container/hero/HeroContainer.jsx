@@ -8,18 +8,14 @@ import Opportunity from "./Opportunity";
 import { IoBook } from "react-icons/io5";
 import { SiSololearn } from "react-icons/si";
 import { AiFillHdd } from "react-icons/ai";
+import ImageSlider from "../ImageSlider";
 
 const HeroContainer = () => {
   return (
     <div className="row flex-lg-row-reverse">
       <div className="col-lg-4" data-aos="fade-left" data-aos-duration="1000">
         <div className="lc-block mb-4">
-          <Image
-            src={
-              "https://images.unsplash.com/photo-1525004866327-07739b938272?crop=entropy&amp;cs=tinysrgb&amp;fit=crop&amp;fm=jpg&amp;ixid=MnwzNzg0fDB8MXxzZWFyY2h8MTZ8fGJ1aWxkaW5nfGVufDB8Mnx8fDE2MzQ1NTA4MDc&amp;ixlib=rb-1.2.1&amp;q=80&amp;w=1080&amp;h=1080"
-            }
-            classes={"img-fluid rounded-3 shadow-orange"}
-          />
+          <ImageSlider />
         </div>
       </div>
       <div className="col-lg-8">

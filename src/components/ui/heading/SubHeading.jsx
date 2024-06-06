@@ -1,7 +1,7 @@
-const SubHeading = ({ text }) => {
+const SubHeading = ({ text, addOn }) => {
   return (
     <div editable="rich">
-      <p className="lead">{text}</p>
+      <p className={`lead ${addOn}`}>{text}</p>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import FooterTopContainer from "../../container/footer/FooterTopContainer";
 
 const FooterLayout = () => {
   return (
-    <div className="mt-5">
+    <div>
       <div className="bg-orange">
         <FooterTopContainer />
         <FooterContainer />

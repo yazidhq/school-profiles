@@ -19,7 +19,8 @@ const SuperNavbarLayout = () => {
   return (
     <section>
       <TopbarContainer />
-      <NavbarContainer addOn={scrollY > 40 && "fixed-top"} />
+      <NavbarContainer />
+      {scrollY > 40 && <NavbarContainer addOn={scrollY > 40 && "fixed-top"} />}
     </section>
   );
 };
