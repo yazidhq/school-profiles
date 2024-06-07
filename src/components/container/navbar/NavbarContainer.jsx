@@ -7,7 +7,7 @@ const NavbarContainer = ({ addOn }) => {
   return (
     <NavbarLayout bg={"white"} addOn={`shadow-sm ${addOn}`}>
       <NavbarBrand />
-      <HamburgerButton />
+      {/* <HamburgerButton /> */}
       <NavbarList />
     </NavbarLayout>
   );

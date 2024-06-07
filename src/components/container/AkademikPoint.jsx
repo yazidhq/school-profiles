@@ -1,18 +1,35 @@
+import { useEnterLeaveMouse } from "../../hooks/useMouseEvent";
 import SubHeading from "../ui/heading/SubHeading";
 
-const AkademikPoint = ({ icon, text, desc }) => {
+const AkademikPoint = ({ icon, text, desc, aos }) => {
+  const [handleMouseEnter, handleMoouseLeave, mouseEvent] =
+    useEnterLeaveMouse();
+
   return (
-    <div>
-      <div className="col d-flex justify-content-center mb-4">
+    <div className="text-center">
+      <div
+        className="col d-flex justify-content-center mb-4"
+        onMouseEnter={() => handleMouseEnter("display-1")}
+        onMouseLeave={() => handleMoouseLeave("display-2")}
+        data-aos={aos}
+      >
         <div
-          className="p-large bg-orange rounded-circle d-flex justify-content-center align-items-center"
-          style={{ width: "100px", height: "100px" }}
+          className={`p-large ${
+            mouseEvent ? mouseEvent : "display-2"
+          } bg-orange rounded-circle d-flex justify-content-center align-items-center`}
+          style={{
+            width: "100px",
+            height: "100px",
+            lineHeight: "0",
+          }}
         >
-          <span className="text-white display-1">{icon}</span>
+          <span className="text-white">{icon}</span>
         </div>
       </div>
-      <SubHeading text={text} addOn={"fw-bold"} />
-      <SubHeading text={desc} addOn={"fs-6"} />
+      <div data-aos="fade">
+        <SubHeading text={text} addOn={"fw-bold"} />
+        <SubHeading text={desc} addOn={"fs-6"} />
+      </div>
     </div>
   );
 };

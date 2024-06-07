@@ -4,6 +4,9 @@ import SuperNavbarLayout from "../components/layouts/navbar/SuperNavbarLayout";
 import FooterLayout from "../components/layouts/footer/FooterLayout";
 import VisiMisiLayout from "../components/layouts/sections/VisiMisiLayout";
 import AkademikLayout from "../components/layouts/sections/AkademikLayout";
+import ActivitiesLayout from "../components/layouts/sections/ActivitiesLayout";
+import AchievementsLayout from "../components/layouts/sections/AchievementsLayout";
+import MapAddressLayout from "../components/layouts/sections/MapAddressLayout";
 
 const HomePage = () => {
   return (
@@ -13,6 +16,9 @@ const HomePage = () => {
       <SuperCardLayout />
       <AkademikLayout />
       <VisiMisiLayout />
+      <ActivitiesLayout />
+      <AchievementsLayout />
+      <MapAddressLayout />
       <FooterLayout />
     </section>
   );

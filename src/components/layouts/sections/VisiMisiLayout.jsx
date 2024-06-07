@@ -7,7 +7,7 @@ const VisiMisiLayout = () => {
     <Section color={"light"}>
       <div className="text-center">
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-6" data-aos="fade-left">
             <Heading text={"Visi"} color={"dark"} />
             <Description
               text={
@@ -15,7 +15,7 @@ const VisiMisiLayout = () => {
               }
             />
           </div>
-          <div className="col-lg-6">
+          <div className="col-lg-6" data-aos="fade-right">
             <Heading text={"Misi"} color={"dark"} />
             <Description
               text={

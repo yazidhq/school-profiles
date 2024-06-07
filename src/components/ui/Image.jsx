@@ -1,5 +1,12 @@
-const Image = ({ src, classes }) => {
-  return <img src={src} className={classes}></img>;
+const Image = ({ src, classes, mouseEnter, mouseLeave }) => {
+  return (
+    <img
+      src={src}
+      className={classes}
+      onMouseEnter={mouseEnter}
+      onMouseLeave={mouseLeave}
+    ></img>
+  );
 };
 
 export default Image;

@@ -111,3 +111,9 @@
 .p-large {
   padding: 5rem 5rem 5rem 5rem !important;
 }
+
+.carousel-img {
+  width: 300px !important;
+  height: 337px !important;
+  object-fit: cover !important;
+}

@@ -10,19 +10,22 @@ const AkademikLayout = () => {
   return (
     <Section color={"white"}>
       <div className="text-center">
-        <Heading text={"Akademik"} color={"dark"} />
-        <Description
-          text={
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi repellendus ipsa nisi eum quo. Nam nulla ipsa ipsum voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit."
-          }
-        />
-        <div className="row row-cols-3 mt-5">
+        <div data-aos="fade-up">
+          <Heading text={"Akademik"} color={"dark"} />
+          <Description
+            text={
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi repellendus ipsa nisi eum quo. Nam nulla ipsa ipsum voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit."
+            }
+          />
+        </div>
+        <div className="row row-cols-md-3 mt-5">
           <AkademikPoint
             icon={<FaQuestionCircle />}
             text={"Kenapa Al-Hikmah"}
             desc={
               "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium consequuntur ad dicta. Cum, quo maiores!"
             }
+            aos="fade-left"
           />
           <AkademikPoint
             icon={<RiBuilding2Fill />}
@@ -30,6 +33,7 @@ const AkademikLayout = () => {
             desc={
               "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium consequuntur ad dicta. Cum, quo maiores!"
             }
+            aos="fade"
           />
           <AkademikPoint
             icon={<FaBookAtlas />}
@@ -37,6 +41,7 @@ const AkademikLayout = () => {
             desc={
               "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium consequuntur ad dicta. Cum, quo maiores!"
             }
+            aos="fade-right"
           />
         </div>
       </div>

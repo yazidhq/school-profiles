@@ -29,7 +29,7 @@ const HeroContainer = () => {
             secondWord={"Future for your Ward"}
           />
         </div>
-        <div className="lc-block mb-4">
+        <div className="lc-block mb-4" data-aos="fade">
           <SubHeading
             text={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid fugit odio accusantium esse amet nostrum labore provident tempore iste necessitatibus."
@@ -54,7 +54,7 @@ const HeroContainer = () => {
             />
           </div>
         </div>
-        <div className="row col-10 row-cols-2 mx-2 mt-5">
+        <div className="row col-12 row-cols-2 mx-2 mt-5">
           <div data-aos="fade-right" data-aos-duration="2000">
             <Opportunity icon={<FaWallet />} text={"Biaya yang terjangkau"} />
           </div>

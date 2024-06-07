@@ -22,7 +22,7 @@ const SuperCardLayout = () => {
         <SuperCardContainer
           route={""}
           icon={<FaMedal />}
-          title={"Prestasi"}
+          title={"Prestasi Siswa"}
           bg={"navy"}
         />
       </div>
