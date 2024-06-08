@@ -5,15 +5,15 @@ import "slick-carousel/slick/slick-theme.css";
 import Image from "../ui/Image";
 
 const imageList = [
-  "../../../public/assets/img-hero/1.jpg",
-  "../../../public/assets/img-hero/2.jpg",
-  "../../../public/assets/img-hero/3.jpg",
-  "../../../public/assets/img-hero/4.jpg",
-  "../../../public/assets/img-hero/5.jpg",
-  "../../../public/assets/img-hero/6.jpg",
-  "../../../public/assets/img-hero/7.jpg",
-  "../../../public/assets/img-hero/8.jpg",
-  "../../../public/assets/img-hero/9.jpg",
+  "/assets/img-hero/1.jpg",
+  "/assets/img-hero/2.JPG",
+  "/assets/img-hero/3.jpg",
+  "/assets/img-hero/4.JPG",
+  "/assets/img-hero/5.jpg",
+  "/assets/img-hero/6.jpg",
+  "/assets/img-hero/7.jpg",
+  "/assets/img-hero/8.JPG",
+  "/assets/img-hero/9.jpg",
 ];
 
 const ImageSlider = () => {

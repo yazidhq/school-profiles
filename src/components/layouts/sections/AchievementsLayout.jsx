@@ -17,7 +17,7 @@ const AchievementsLayout = () => {
               data-aos-delay="50"
             >
               <CarouselContainer
-                imgSrc={"../../../public/assets/img-hero/1.jpg"}
+                imgSrc={"/assets/img-hero/1.jpg"}
                 title={"Fun Cooking"}
                 desc={"Lorem ipsum dolor sit.."}
                 route={""}
@@ -29,7 +29,7 @@ const AchievementsLayout = () => {
               data-aos-delay="250"
             >
               <CarouselContainer
-                imgSrc={"../../../public/assets/img-hero/2.jpg"}
+                imgSrc={"/assets/img-hero/2.JPG"}
                 title={"Amazing Adventure"}
                 desc={"Lorem ipsum dolor sit.."}
                 route={""}
@@ -41,7 +41,7 @@ const AchievementsLayout = () => {
               data-aos-delay="500"
             >
               <CarouselContainer
-                imgSrc={"../../../public/assets/img-hero/6.jpg"}
+                imgSrc={"/assets/img-hero/6.jpg"}
                 title={"Upacara Bendera"}
                 desc={"Lorem ipsum dolor sit.."}
                 route={""}

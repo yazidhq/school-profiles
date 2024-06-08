@@ -28,7 +28,7 @@ const ActivitiesLayout = () => {
               data-aos-delay="50"
             >
               <CarouselContainer
-                imgSrc={"../../../public/assets/img-hero/4.jpg"}
+                imgSrc={"/assets/img-hero/4.JPG"}
                 title={"Fun Cooking"}
                 desc={"Lorem ipsum dolor sit.."}
                 route={""}
@@ -40,7 +40,7 @@ const ActivitiesLayout = () => {
               data-aos-delay="250"
             >
               <CarouselContainer
-                imgSrc={"../../../public/assets/img-hero/3.jpg"}
+                imgSrc={"/assets/img-hero/3.jpg"}
                 title={"Amazing Adventure"}
                 desc={"Lorem ipsum dolor sit.."}
                 route={""}
@@ -52,7 +52,7 @@ const ActivitiesLayout = () => {
               data-aos-delay="500"
             >
               <CarouselContainer
-                imgSrc={"../../../public/assets/img-hero/7.jpg"}
+                imgSrc={"/assets/img-hero/7.jpg"}
                 title={"Upacara Bendera"}
                 desc={"Lorem ipsum dolor sit.."}
                 route={""}
