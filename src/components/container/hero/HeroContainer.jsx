@@ -1,6 +1,5 @@
 import { FaWallet } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
-import Image from "../../ui/Image";
 import SuperHeading from "../../ui/heading/SuperHeading";
 import SubHeading from "../../ui/heading/SubHeading";
 import IconedButton from "../../ui/button/IconedButton";

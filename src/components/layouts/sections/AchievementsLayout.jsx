@@ -9,7 +9,18 @@ const AchievementsLayout = () => {
   return (
     <Section color={"white"}>
       <div className="row">
-        <div className="col-md-9">
+        <div className="col-md-3 text-justify order-md-2 order-1">
+          <div className="d-flex justify-content-between">
+            <Heading text={"Prestasi"} />
+          </div>
+          <SubHeading
+            text={
+              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At iusto voluptatibus nulla similique possimus ullam neque fuga nesciunt unde nisi id, labore qui? Dolor, natus."
+            }
+            addOn={"fs-6"}
+          />
+        </div>
+        <div className="col-md-9 order-md-1 order-2">
           <div className="d-flex gap-3">
             <div
               data-aos="fade-right"
@@ -54,17 +65,6 @@ const AchievementsLayout = () => {
             </Anchor>
             <HiOutlineArrowLongRight className="mx-4" />
           </div>
-        </div>
-        <div className="col-md-3 text-justify">
-          <div className="d-flex justify-content-between">
-            <Heading text={"Prestasi"} />
-          </div>
-          <SubHeading
-            text={
-              "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At iusto voluptatibus nulla similique possimus ullam neque fuga nesciunt unde nisi id, labore qui? Dolor, natus."
-            }
-            addOn={"fs-6"}
-          />
         </div>
       </div>
     </Section>
