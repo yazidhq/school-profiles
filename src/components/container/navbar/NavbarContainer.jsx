@@ -1,5 +1,5 @@
 import NavbarLayout from "../../layouts/navbar/NavbarLayout";
-import NavbarBrand from "../../ui/NavbarBrand";
+import NavbarBrand from "./NavbarBrand";
 import HamburgerButton from "../../ui/button/HamburgerButton";
 import NavbarList from "./NavbarList";
 
