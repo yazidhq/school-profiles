@@ -5,7 +5,7 @@ const MapContainer = ({ unit, children }) => {
     <>
       <SubHeading text={unit} addOn={"fw-medium"} />
       <div className="d-grid">
-        <div className="border shadow-sm">{children}</div>
+        <div className="shadow-sm">{children}</div>
       </div>
     </>
   );
