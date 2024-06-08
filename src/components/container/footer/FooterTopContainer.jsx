@@ -7,9 +7,9 @@ const FooterTopContainer = () => {
       <div className="container pt-3">
         <div className="d-flex justify-content-between">
           <div className="d-flex gap-4">
-            <p className="fw-bold">Region Tirtamulya</p>
+            <p className="fw-bold">Unit Tirtamulya</p>
             <span>|</span>
-            <p className="fw-bold">Region Dawuan</p>
+            <p className="fw-bold">Unit Dawuan</p>
           </div>
           <div className="d-flex gap-4">
             <Sosmed color={"navy"} icon={<FaInstagram />} />

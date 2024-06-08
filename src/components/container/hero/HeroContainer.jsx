@@ -40,7 +40,7 @@ const HeroContainer = () => {
           <div data-aos="fade" data-aos-duration="1500">
             <IconedButton
               styles={"btn-sm btn-navy rounded-5 px-4"}
-              text={"Pilih Region"}
+              text={"Pilih Unit"}
               marginX={"mx-2"}
               icon={<FaArrowRightLong />}
             />
