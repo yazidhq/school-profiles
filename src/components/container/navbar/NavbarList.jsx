@@ -1,5 +1,5 @@
 import { FaRegPaperPlane } from "react-icons/fa";
-import List from "../../ui/List";
+import List from "../../ui/list/List";
 import IconedButton from "../../ui/button/IconedButton";
 
 const NavbarList = () => {

@@ -9,6 +9,7 @@ import { IoBook } from "react-icons/io5";
 import { SiSololearn } from "react-icons/si";
 import { AiFillHdd } from "react-icons/ai";
 import ImageSlider from "../ImageSlider";
+import DropdownList from "../../ui/list/DropdownList";
 
 const HeroContainer = () => {
   return (
@@ -37,21 +38,25 @@ const HeroContainer = () => {
           />
         </div>
         <div className="d-flex gap-3">
-          <div data-aos="fade" data-aos-duration="1500">
-            <IconedButton
-              styles={"btn-sm btn-navy rounded-5 px-4"}
-              text={"Pilih Unit"}
-              marginX={"mx-2"}
-              icon={<FaArrowRightLong />}
-            />
-          </div>
           <div data-aos="fade" data-aos-duration="3000">
             <IconedButton
-              styles={"btn-sm btn-outline-navy rounded-5 px-4"}
+              styles={"btn-sm btn-navy rounded-5 px-4"}
               text={"Daftar Sekarang"}
               marginX={"mx-2"}
               icon={<FaArrowRightLong />}
             />
+          </div>
+          <div data-aos="fade" data-aos-duration="1500">
+            <IconedButton
+              styles={"btn-sm btn-outline-navy rounded-5 px-4"}
+              text={"Pilih Unit"}
+              marginX={"mx-2"}
+              icon={<FaArrowRightLong />}
+              dropdown={true}
+            >
+              <DropdownList route={""}>Al-Hikmah Tirtamulya</DropdownList>
+              <DropdownList route={""}>Al-Hikmah Dawuan</DropdownList>
+            </IconedButton>
           </div>
         </div>
         <div className="row col-12 row-cols-2 mx-2 mt-5">
