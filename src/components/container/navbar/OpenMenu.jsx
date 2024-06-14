@@ -10,12 +10,12 @@ const OpenMenu = ({ handleMouseClick }) => {
     "Ekstrakurikuler",
     "Hari Besar",
     "Kegiatan Belajar dan Mengajar",
-    "Prestasi",
+    "Prestasi Siswa",
   ];
 
   return (
     <div className="custom-modal-overlay">
-      <div className="custom-modal bg-glass rounded-end-4">
+      <div className="custom-modal bg-glass rounded-end-4 shadow-lg">
         <div className="modal-content">
           <div className="d-flex justify-content-between modal-header pt-4 px-4">
             <SubHeading text={"MENU"} addOn={"fw-bold fs-4 mt-3"} />

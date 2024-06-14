@@ -29,7 +29,7 @@ const AkademikLayout = () => {
           />
           <AkademikPoint
             icon={<RiBuilding2Fill />}
-            text={"Tentang Unit"}
+            text={"Tentang Sekolah"}
             desc={
               "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium consequuntur ad dicta. Cum, quo maiores!"
             }

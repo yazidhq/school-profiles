@@ -1,9 +1,9 @@
 import SubHeading from "../ui/heading/SubHeading";
 
-const MapContainer = ({ unit, children }) => {
+const MapContainer = ({ school, children }) => {
   return (
     <>
-      <SubHeading text={unit} addOn={"fw-medium"} />
+      <SubHeading text={school} addOn={"fw-medium"} />
       <div className="d-grid">
         <div className="shadow-sm">{children}</div>
       </div>
