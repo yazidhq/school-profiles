@@ -1,12 +1,14 @@
+import { useParams } from "react-router-dom";
 import HeroContainer from "../../container/hero/HeroContainer";
+import HeroProfileContainer from "../../container/hero/HeroProfileContainer";
 
 const HeroLayout = () => {
+  const { school } = useParams();
+
   return (
-    <div className="bg-gradient-yellow pb-5">
-      <div className="container py-5">
-        <div className="row flex-lg-row-reverse">
-          <HeroContainer />
-        </div>
+    <div className={`bg-gradient-yellow ${school ? "" : "pb-5"}`}>
+      <div className={`container ${school ? "pt-5" : "py-5"}`}>
+        {school ? <HeroProfileContainer school={school} /> : <HeroContainer />}
       </div>
     </div>
   );

@@ -19,7 +19,7 @@ const NavbarBrand = () => {
         >
           {!mouseEvent ? <GiHamburgerMenu /> : <AiOutlineClose />}
         </Button>
-        <Anchor route={""} color={"navbar-brand"}>
+        <Anchor route={"/"} color={"navbar-brand"}>
           <Logo width={"40px"} />
           <span className="fw-bold text-navy">Yayasan Al-Hikmah</span>
         </Anchor>

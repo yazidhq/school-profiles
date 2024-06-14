@@ -5,7 +5,7 @@ const ListMenu = ({ school, menu }) => {
     <div className="d-flex flex-column gap-2">
       {menu.map((item) => (
         <Anchor
-          route={`${school}/${item.replace(" ", "-").toLowerCase()}`}
+          route={`/${school}/${item.replace(" ", "-").toLowerCase()}`}
           key={item}
           color={"dark"}
         >

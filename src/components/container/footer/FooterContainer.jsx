@@ -1,7 +1,6 @@
 import Logo from "../../ui/Logo";
 import SubHeading from "../../ui/heading/SubHeading";
 import SuperHeading from "../../ui/heading/SuperHeading";
-import FooterTopContainer from "./FooterTopContainer";
 
 const FooterContainer = () => {
   return (
