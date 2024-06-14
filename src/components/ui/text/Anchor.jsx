@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const Anchor = ({ route, children, color }) => {
   return (
-    <a href={route} className={`text-decoration-none text-${color}`}>
+    <Link to={route} className={`text-decoration-none text-${color}`}>
       {children}
-    </a>
+    </Link>
   );
 };
 

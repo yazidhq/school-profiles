@@ -39,6 +39,13 @@
   ) !important;
 }
 
+.bg-glass {
+  background: rgba(255, 255, 255, 0.7) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(11.7px) !important;
+  -webkit-backdrop-filter: blur(11.7px) !important;
+}
+
 .bg-white {
   background-color: #ffff01;
 }
@@ -157,7 +164,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
   z-index: 1050;
 }
 
