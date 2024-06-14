@@ -23,11 +23,19 @@ const OpenMenu = ({ handleMouseClick }) => {
           </div>
           <div className="modal-body p-4">
             <SubHeading text={"ALHIKMAH TIRTAMULYA"} addOn={"fw-bold fs-6"} />
-            <ListMenu school="tirtamulya" menu={listMenu} />
+            <ListMenu
+              school="tirtamulya"
+              menu={listMenu}
+              handleMouseClick={handleMouseClick}
+            />
             <br />
             <br />
             <SubHeading text={"ALHIKMAH DAWUAN"} addOn={"fw-bold fs-6"} />
-            <ListMenu school="dawuan" menu={listMenu} />
+            <ListMenu
+              school="dawuan"
+              menu={listMenu}
+              handleMouseClick={handleMouseClick}
+            />
           </div>
         </div>
       </div>
