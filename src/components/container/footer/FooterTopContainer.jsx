@@ -6,10 +6,11 @@ const FooterTopContainer = () => {
     <div className="border-bottom border-white">
       <div className="container pt-3">
         <div className="d-flex justify-content-between">
-          <div className="d-flex gap-4">
-            <p className="fw-bold">Alhikmah Tirtamulya</p>
-            <span>|</span>
-            <p className="fw-bold">Alhikmah Dawuan</p>
+          <div>
+            <p className="fw-bold">
+              Alhikmah Tirtamulya <span className="mx-3">|</span> Alhikmah
+              Dawuan
+            </p>
           </div>
           <div className="d-flex gap-4">
             <Sosmed color={"navy"} icon={<FaInstagram />} />
