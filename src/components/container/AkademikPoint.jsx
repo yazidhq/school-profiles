@@ -1,4 +1,5 @@
 import { useEnterLeaveMouse } from "../../hooks/useMouseEvent";
+import Aos from "../ui/Aos";
 import SubHeading from "../ui/heading/SubHeading";
 
 const AkademikPoint = ({ icon, text, desc, aos }) => {
@@ -26,10 +27,10 @@ const AkademikPoint = ({ icon, text, desc, aos }) => {
           <span className="text-white">{icon}</span>
         </div>
       </div>
-      <div data-aos="fade">
+      <Aos fade={"fade"}>
         <SubHeading text={text} addOn={"fw-bold"} />
         <SubHeading text={desc} addOn={"fs-6"} />
-      </div>
+      </Aos>
     </div>
   );
 };

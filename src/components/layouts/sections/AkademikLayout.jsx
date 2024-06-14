@@ -5,19 +5,20 @@ import { RiBuilding2Fill } from "react-icons/ri";
 import Description from "../../ui/text/Description";
 import { FaBookAtlas } from "react-icons/fa6";
 import AkademikPoint from "../../container/AkademikPoint";
+import Aos from "../../ui/Aos";
 
 const AkademikLayout = () => {
   return (
     <Section color={"white"}>
       <div className="text-center">
-        <div data-aos="fade-up">
+        <Aos fade={"fade-up"}>
           <Heading text={"Akademik"} color={"dark"} />
           <Description
             text={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi repellendus ipsa nisi eum quo. Nam nulla ipsa ipsum voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit."
             }
           />
-        </div>
+        </Aos>
         <div className="row row-cols-md-3 mt-5">
           <AkademikPoint
             icon={<FaQuestionCircle />}

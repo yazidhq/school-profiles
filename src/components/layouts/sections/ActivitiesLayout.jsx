@@ -4,6 +4,7 @@ import Section from "../../container/Section";
 import Heading from "../../ui/heading/Heading";
 import SubHeading from "../../ui/heading/SubHeading";
 import Anchor from "../../ui/text/Anchor";
+import Aos from "../../ui/Aos";
 
 const ActivitiesLayout = () => {
   return (
@@ -22,42 +23,32 @@ const ActivitiesLayout = () => {
         </div>
         <div className="col-md-9">
           <div className="d-flex gap-3">
-            <div
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="50"
-            >
+            <Aos fade={"fade-left"} duration={"1000"} delay={"50"}>
               <CarouselContainer
                 imgSrc={"/assets/img-hero/4.JPG"}
                 title={"Fun Cooking"}
                 desc={"Lorem ipsum dolor sit.."}
                 route={""}
               />
-            </div>
-            <div
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="250"
-            >
+            </Aos>
+
+            <Aos fade={"fade-left"} duration={"1000"} delay={"250"}>
               <CarouselContainer
                 imgSrc={"/assets/img-hero/3.jpg"}
                 title={"Amazing Adventure"}
                 desc={"Lorem ipsum dolor sit.."}
                 route={""}
               />
-            </div>
-            <div
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="500"
-            >
+            </Aos>
+
+            <Aos fade={"fade-left"} duration={"1000"} delay={"500"}>
               <CarouselContainer
                 imgSrc={"/assets/img-hero/7.jpg"}
                 title={"Upacara Bendera"}
                 desc={"Lorem ipsum dolor sit.."}
                 route={""}
               />
-            </div>
+            </Aos>
           </div>
           <div className="mt-4 text-end">
             <Anchor route={""} color={"white"}>
