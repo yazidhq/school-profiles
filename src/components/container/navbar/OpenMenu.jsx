@@ -15,13 +15,13 @@ const OpenMenu = ({ handleMouseClick }) => {
 
   return (
     <div className="custom-modal-overlay">
-      <div className="custom-modal bg-glass rounded-end-4 shadow-lg">
+      <div className="custom-modal bg-glass rounded-end-5 shadow-lg">
         <div className="modal-content">
-          <div className="d-flex justify-content-between modal-header pt-4 px-4">
+          <div className="d-flex justify-content-between modal-header pt-4 px-5 text-navy">
             <SubHeading text={"MENU"} addOn={"fw-bold fs-4 mt-3"} />
             <Button style={"link btn-close"} buttonClick={handleMouseClick} />
           </div>
-          <div className="modal-body p-4">
+          <div className="modal-body p-4 px-5">
             <SubHeading text={"ALHIKMAH TIRTAMULYA"} addOn={"fw-bold fs-6"} />
             <ListMenu
               school="tirtamulya"
