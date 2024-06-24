@@ -1,6 +1,6 @@
-const Heading = ({ text, color }) => {
+const Heading = ({ text, color, size }) => {
   return (
-    <p className={`text-${color} fw-bold fs-2 mb-3`}>
+    <p className={`text-${color} fw-bold fs-${size} mb-3`}>
       <strong>{text}</strong>
     </p>
   );

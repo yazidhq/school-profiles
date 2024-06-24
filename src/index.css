@@ -103,6 +103,21 @@
   background-color: #ffbe19 !important;
 }
 
+.btn-orange:hover {
+  background-color: #ffaf19 !important;
+}
+
+.btn-outline-orange {
+  color: #ffbe19 !important;
+  border-color: #ffbe19 !important;
+  border-width: 2px !important;
+}
+
+.btn-outline-orange:hover {
+  color: white !important;
+  background-color: #ffbe19 !important;
+}
+
 .shadow-navy {
   box-shadow: 7px 7px #020066 !important;
 }
