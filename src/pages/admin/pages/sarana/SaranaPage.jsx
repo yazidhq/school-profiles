@@ -1,7 +1,11 @@
+import { useState } from "react";
 import Section from "../../../../components/admin/Section";
 import DataTables from "../../../../components/admin/components/DataTables";
+import useSearch from "../../../../hooks/useSearch";
 
-const UnitPage = () => {
+const SaranaPage = () => {
+  const [search, setSearch, filteredData, setFilteredData] = useSearch();
+
   const columns = [
     {
       name: "Name",
@@ -56,16 +60,37 @@ const UnitPage = () => {
     },
   ];
 
+  const handleSearch = (event) => {
+    const value = event.target.value.toLowerCase();
+    setSearch(value);
+
+    const filtered = data.filter(
+      (item) =>
+        item.name.toLowerCase().includes(value) ||
+        item.position.toLowerCase().includes(value) ||
+        item.office.toLowerCase().includes(value) ||
+        item.age.toString().includes(value) ||
+        item.startDate.toLowerCase().includes(value) ||
+        item.salary.toLowerCase().includes(value)
+    );
+
+    setFilteredData(filtered);
+  };
+
+  useState(() => {
+    setFilteredData(data);
+  }, [data]);
+
   return (
     <Section>
       <DataTables
+        search={search}
+        handleSearch={handleSearch}
         columns={columns}
-        filteredData={data}
-        is_search={false}
-        is_paginate={false}
+        filteredData={filteredData}
       />
     </Section>
   );
 };
 
-export default UnitPage;
+export default SaranaPage;

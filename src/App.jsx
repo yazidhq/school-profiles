@@ -10,6 +10,7 @@ import { AuthProvider, useAuth } from "./context/AuthContext";
 import AdminPage from "./pages/admin/AdminPage";
 import LoginPage from "./pages/admin/auth/LoginPage";
 import UnitPage from "./pages/admin/pages/unit/UnitPage";
+import SaranaPage from "./pages/admin/pages/sarana/SaranaPage";
 
 const ProtectedRoute = ({ children }) => {
   const { currentUser } = useAuth();
@@ -38,6 +39,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <UnitPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/sarana"
+            element={
+              <ProtectedRoute>
+                <SaranaPage />
               </ProtectedRoute>
             }
           />
