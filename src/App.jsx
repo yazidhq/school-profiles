@@ -9,6 +9,7 @@ import ProfilePage from "./pages/ProfilePage";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import AdminPage from "./pages/admin/AdminPage";
 import LoginPage from "./pages/admin/auth/LoginPage";
+import UnitPage from "./pages/admin/pages/unit/UnitPage";
 
 const ProtectedRoute = ({ children }) => {
   const { currentUser } = useAuth();
@@ -20,11 +21,9 @@ function App() {
     <AuthProvider>
       <Router>
         <Routes>
-          {/* user */}
           <Route path="/" element={<HomePage />} />
           <Route path="/:school/profil" element={<ProfilePage />} />
-          {/* user */}
-          {/* admin */}
+
           <Route path="/login" element={<LoginPage />} />
           <Route
             path="/admin"
@@ -34,7 +33,14 @@ function App() {
               </ProtectedRoute>
             }
           />
-          {/* admin */}
+          <Route
+            path="/unit"
+            element={
+              <ProtectedRoute>
+                <UnitPage />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
       </Router>
     </AuthProvider>
