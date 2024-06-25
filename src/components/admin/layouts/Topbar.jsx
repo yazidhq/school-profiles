@@ -16,6 +16,7 @@ const Topbar = () => {
               <Logo width={"40px"} is_admin={true} />
             </Link>
           </div>
+          <div className="fw-medium">Yayasan Al-Hikmah</div>
           <div>
             <DropdownButton text={"Admin"}>
               <DropdownList onClick={logout} is_button={true}>

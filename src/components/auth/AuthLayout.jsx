@@ -24,10 +24,10 @@ const AuthLayout = ({ handleLogin }) => {
 
   return (
     <div
-      className="bg-orange d-flex align-items-center justify-content-center"
+      className="bg-light d-flex align-items-center justify-content-center"
       style={{ height: "100vh" }}
     >
-      <div className="bg-white rounded-5" style={{ width: "30rem" }}>
+      <div className="bg-white rounded-5 shadow" style={{ width: "30rem" }}>
         <div className="pt-5 px-5 pb-5">
           <div className="text-center">
             <Heading text={"Admin"} size={"1"} />

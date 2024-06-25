@@ -12,7 +12,7 @@ const AchievementsLayout = () => {
       <div className="row">
         <div className="col-md-3 text-justify order-md-2 order-1">
           <div className="d-flex justify-content-between">
-            <Heading text={"Prestasi"} />
+            <Heading text={"Prestasi"} size={"3"} />
           </div>
           <SubHeading
             text={

@@ -12,7 +12,7 @@ const AkademikLayout = () => {
     <Section color={"white"}>
       <div className="text-center">
         <Aos fade={"fade-up"}>
-          <Heading text={"Akademik"} color={"dark"} />
+          <Heading text={"Akademik"} color={"dark"} size={"1"} />
           <Description
             text={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores modi repellendus ipsa nisi eum quo. Nam nulla ipsa ipsum voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit."

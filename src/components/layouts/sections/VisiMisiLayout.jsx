@@ -10,7 +10,7 @@ const VisiMisiLayout = () => {
         <div className="row">
           <div className="col-lg-6">
             <Aos fade={"fade-left"}>
-              <Heading text={"Visi"} color={"dark"} />
+              <Heading text={"Visi"} color={"dark"} size={"1"} />
               <Description
                 text={
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti ipsa modi voluptate exercitationem labore corporis velit inventore minima? Natus impedit cumque quasi vero! Molestias?"
@@ -20,7 +20,7 @@ const VisiMisiLayout = () => {
           </div>
           <div className="col-lg-6">
             <Aos fade={"fade-right"}>
-              <Heading text={"Misi"} color={"dark"} />
+              <Heading text={"Misi"} color={"dark"} size={"1"} />
               <Description
                 text={
                   "Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti ipsa modi voluptate exercitationem labore corporis velit inventore minima? Natus impedit cumque quasi vero! Molestias?"

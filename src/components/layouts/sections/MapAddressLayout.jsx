@@ -10,6 +10,7 @@ const MapAddressLayout = () => {
         <Heading
           text={"Kunjungi Kami"}
           color={"dark border-bottom border-2 border-dark pb-3"}
+          size={"1"}
         />
       </div>
       <div className="row pt-4">

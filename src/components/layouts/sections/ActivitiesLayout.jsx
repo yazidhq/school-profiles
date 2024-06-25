@@ -12,7 +12,7 @@ const ActivitiesLayout = () => {
       <div className="row text-white">
         <div className="col-md-3">
           <div className="d-flex justify-content-between">
-            <Heading text={"Kegiatan Siswa"} color={"white"} />
+            <Heading text={"Kegiatan Siswa"} color={"white"} size={"3"} />
           </div>
           <SubHeading
             text={
