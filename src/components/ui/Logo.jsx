@@ -1,9 +1,9 @@
-const Logo = ({ width }) => {
+const Logo = ({ width, is_admin }) => {
   return (
     <img
       src="/logo.png"
       alt="tirtamulya"
-      className="img-fluid mx-3"
+      className={`img-fluid ${is_admin ? "mx-2" : "mx-3"}`}
       width={width}
     />
   );

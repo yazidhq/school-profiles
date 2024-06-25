@@ -1,14 +1,11 @@
-import Heading from "../../components/ui/heading/Heading";
-import { useAuth } from "../../context/AuthContext";
+import Section from "../../components/admin/Section";
 
 const AdminPage = () => {
-  const { logout } = useAuth();
-
   return (
-    <div>
-      <Heading text={"ADMIN"} />
-      <button onClick={logout}>logout</button>
-    </div>
+    <Section>
+      Login berhasil! anda berada di{" "}
+      <span className="fw-medium">Dashboard Admin</span>
+    </Section>
   );
 };
 

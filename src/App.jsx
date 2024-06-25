@@ -23,6 +23,7 @@ function App() {
           {/* user */}
           <Route path="/" element={<HomePage />} />
           <Route path="/:school/profil" element={<ProfilePage />} />
+          {/* user */}
           {/* admin */}
           <Route path="/login" element={<LoginPage />} />
           <Route
@@ -33,6 +34,7 @@ function App() {
               </ProtectedRoute>
             }
           />
+          {/* admin */}
         </Routes>
       </Router>
     </AuthProvider>
