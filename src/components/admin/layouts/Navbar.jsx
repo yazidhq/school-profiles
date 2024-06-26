@@ -14,6 +14,9 @@ const Navbar = () => {
             <NavbarList href={"/admin"} is_active={url === "/admin"}>
               Dashboard
             </NavbarList>
+            <NavbarList href={"/yayasan"} is_active={url === "/yayasan"}>
+              Yayasan
+            </NavbarList>
             <NavbarList href={"/unit"} is_active={url === "/unit"}>
               Unit
             </NavbarList>

@@ -10,7 +10,8 @@ import AdminPage from "./pages/admin/AdminPage";
 import LoginPage from "./pages/admin/auth/LoginPage";
 import UnitPage from "./pages/admin/pages/unit/UnitPage";
 import SaranaPage from "./pages/admin/pages/sarana/SaranaPage";
-import AddUnit from "./pages/admin/pages/unit/AddUnit";
+import YayasanPage from "./pages/admin/pages/YayasanPage";
+import { YayasanProvider } from "./context/YayasanContext";
 
 const ProtectedRoute = ({ children }) => {
   const { currentUser } = useAuth();
@@ -20,44 +21,47 @@ const ProtectedRoute = ({ children }) => {
 function App() {
   return (
     <AuthProvider>
-      <Router>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route
-            path="/admin"
-            element={
-              <ProtectedRoute>
-                <AdminPage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/unit"
-            element={
-              <ProtectedRoute>
-                <UnitPage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/unit/add_unit"
-            element={
-              <ProtectedRoute>
-                <AddUnit />
-              </ProtectedRoute>
-            }
-          />
-          <Route
-            path="/sarana"
-            element={
-              <ProtectedRoute>
-                <SaranaPage />
-              </ProtectedRoute>
-            }
-          />
-        </Routes>
-      </Router>
+      <YayasanProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/login" element={<LoginPage />} />
+
+            <Route
+              path="/admin"
+              element={
+                <ProtectedRoute>
+                  <AdminPage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/yayasan"
+              element={
+                <ProtectedRoute>
+                  <YayasanPage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/unit"
+              element={
+                <ProtectedRoute>
+                  <UnitPage />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/sarana"
+              element={
+                <ProtectedRoute>
+                  <SaranaPage />
+                </ProtectedRoute>
+              }
+            />
+          </Routes>
+        </Router>
+      </YayasanProvider>
     </AuthProvider>
   );
 }
