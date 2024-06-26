@@ -3,15 +3,8 @@ import SubHeading from "../../ui/heading/SubHeading";
 import ListMenu from "../../ui/list/ListMenu";
 
 const OpenMenu = ({ handleMouseClick }) => {
-  const listMenu = [
-    "Profil",
-    "Jenjang Pendidikan",
-    "Sarana dan Prasarana",
-    "Ekstrakurikuler",
-    "Hari Besar",
-    "Kegiatan Belajar dan Mengajar",
-    "Prestasi Siswa",
-  ];
+  const yayasan = ["Tentang Kami", "Sejarah Berdirinya Al-Hikmah"];
+  const listMenu = ["Al-Hikmah Dawuan", "Al-Hikmah Tirtamulya"];
 
   return (
     <div className="custom-modal-overlay">
@@ -22,20 +15,13 @@ const OpenMenu = ({ handleMouseClick }) => {
             <Button style={"link btn-close"} buttonClick={handleMouseClick} />
           </div>
           <div className="modal-body p-4 px-5">
-            <SubHeading text={"ALHIKMAH TIRTAMULYA"} addOn={"fw-bold fs-6"} />
-            <ListMenu
-              school="tirtamulya"
-              menu={listMenu}
-              handleMouseClick={handleMouseClick}
+            <SubHeading text={"YAYASAN AL-HIKMAH"} addOn={"fw-bold fs-6"} />
+            <ListMenu menu={yayasan} handleMouseClick={handleMouseClick} />
+            <SubHeading
+              text={"SEKOLAH AL-HIKMAH"}
+              addOn={"fw-bold fs-6 mt-4"}
             />
-            <br />
-            <br />
-            <SubHeading text={"ALHIKMAH DAWUAN"} addOn={"fw-bold fs-6"} />
-            <ListMenu
-              school="dawuan"
-              menu={listMenu}
-              handleMouseClick={handleMouseClick}
-            />
+            <ListMenu menu={listMenu} handleMouseClick={handleMouseClick} />
           </div>
         </div>
       </div>
