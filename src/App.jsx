@@ -11,6 +11,7 @@ import AdminPage from "./pages/admin/AdminPage";
 import LoginPage from "./pages/admin/auth/LoginPage";
 import UnitPage from "./pages/admin/pages/unit/UnitPage";
 import SaranaPage from "./pages/admin/pages/sarana/SaranaPage";
+import AddUnit from "./pages/admin/pages/unit/AddUnit";
 
 const ProtectedRoute = ({ children }) => {
   const { currentUser } = useAuth();
@@ -39,6 +40,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <UnitPage />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/unit/add_unit"
+            element={
+              <ProtectedRoute>
+                <AddUnit />
               </ProtectedRoute>
             }
           />
